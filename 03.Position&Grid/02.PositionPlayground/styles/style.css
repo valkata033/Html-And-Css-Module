@@ -1,0 +1,32 @@
+
+section.card, section.card2{
+    height: 50vh;
+    position: relative;
+}
+
+section.card {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(18,194,153,1) 40%);
+}
+
+section.card2 {
+    background: rgb(154,12,12);
+background: linear-gradient(90deg, rgba(154,12,12,0.9473039215686274) 53%, rgba(252,176,69,1) 100%);
+}
+
+section.card img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.card2 img {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 1/1.2;
+    transform: translate(-50%, -50%);
+}
