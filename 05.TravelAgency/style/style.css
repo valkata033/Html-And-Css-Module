@@ -1,0 +1,233 @@
+
+/* devanagari */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+    unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* 
+  btn - #370511
+
+*/
+
+
+body{
+    background-color: lightgray;
+    letter-spacing: 1px;
+}
+
+/* Header */
+
+.header {
+    background-image: url(../images/landing-photo.jpg);
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .nav-content {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav-title {
+    margin-right: 100px;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.header .nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .nav-items .nav-item a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .content {
+    margin-top: 210px;
+    margin-left: 120px;
+}
+
+.header .nav-btn {
+    margin-left: 34px;
+}
+
+.header .btn-primary {
+    background-color: #370511;
+    color: white;
+    padding: 2px 32px;
+    border-radius: 20px;
+}
+
+.header .heading-one {
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.header .heading-two {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.header .text {
+    font-size: 16px;
+}
+
+.header .head-btn {
+    margin-top: 26px;
+}
+
+
+/* Main */
+
+.main {
+    text-align: center;
+    background-color: white;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main .title {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+.main .subtitle {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.main .cards{
+    width: 1000px;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px 60px;
+    margin-left: 20px;
+}
+
+.main .card {
+    width: 250px;
+    height: 300px;
+}
+
+.main .card-img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.main .card-btn {
+    border-radius: 20px;
+    padding: 8px 32px;
+    background: transparent;
+    border-color: #70172d;
+}
+
+.main .card-title {
+    margin-bottom: 8px;
+}
+
+.main .card-desc {
+    margin-bottom: 16px;
+}
+
+/* Footer */
+
+.footer {
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 36px;
+}
+
+.footer .container1 a,
+.footer .container2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .footer-title {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: -100px;
+}
+
+.footer .container1,
+.footer .container2,
+.footer .socials {
+    display: flex;
+    align-items: center;
+}
+
+.footer .items {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -100px;
+}
+
+.footer .items .item{
+    margin: 4px;
+}
+
+.footer .socials .items {
+    flex-direction: row;
+    margin-right: 14px;
+}
+
+.footer .socials .items .item {
+    padding: 4px;
+}
+
+.footer .socials {
+    flex-direction: column;
+    margin-top: 80px;
+}
